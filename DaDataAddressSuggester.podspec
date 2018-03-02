@@ -16,18 +16,19 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DaDataAddressSuggester"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of DaDataAddressSuggester."
+  s.version      = "1.0.0"
+  s.summary      = "Suggests Address to UITextField"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+s.description      = <<-DESC
+Suggests Address to UITextField
+                       DESC
 
-  s.homepage     = "http://EXAMPLE/DaDataAddressSuggester"
+  s.homepage     = "https://github.com/iNorD/DaDataAddressSuggester.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/DaDataAddressSuggester.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/iNorD/DaDataAddressSuggester.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
