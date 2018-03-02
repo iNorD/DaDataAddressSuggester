@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AD9501A10AA816FEAAEE668 /* SuggestionsCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95E14CC5B195CFB40621F /* SuggestionsCollectionViewDataSource.m */; };
-		3AD9546F51F5BDBAB18A4B38 /* AddressSuggestTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9500F511995D0986EF5AF /* AddressSuggestTextField.m */; };
-		3AD95644CC53DE361FDCC0CF /* SuggestionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9578E4184C0DC36363FE1 /* SuggestionProvider.m */; };
-		3AD956D8098F6E81B0AAB809 /* SuggestionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD951976F4AC5D8AECC64C8 /* SuggestionCollectionViewCell.m */; };
-		3AD958C81B6A5E41586F6ABC /* UIFont+SuggestionFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95CCAF7A1A8C0C157FB1B /* UIFont+SuggestionFont.m */; };
-		3AD95914D941F7786009E71F /* SuggestSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95FEFA590501D89BC4896 /* SuggestSliderView.m */; };
-		3AD95C20BACEF31861C4F710 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD957F03BCB00E2DDEAE8D0 /* Constants.m */; };
-		3AD95D995EF911D5AA7B9814 /* SuggestionsCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95A808285BD754A59B5C6 /* SuggestionsCollectionViewDelegate.m */; };
+		311364E549FE258A3DEB5BA9 /* libPods-AddressSuggestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D70E597E6A8D21CCC17B51 /* libPods-AddressSuggestApp.a */; };
 		A7B2EE6320469E3300449B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2EE6220469E3300449B64 /* AppDelegate.m */; };
 		A7B2EE6620469E3300449B64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2EE6520469E3300449B64 /* ViewController.m */; };
 		A7B2EE6920469E3300449B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B2EE6720469E3300449B64 /* Main.storyboard */; };
@@ -24,24 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AD9500F511995D0986EF5AF /* AddressSuggestTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSuggestTextField.m; sourceTree = "<group>"; };
-		3AD951217DD6D65923321D3A /* SuggestionCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionCollectionViewCell.h; sourceTree = "<group>"; };
-		3AD951976F4AC5D8AECC64C8 /* SuggestionCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionCollectionViewCell.m; sourceTree = "<group>"; };
-		3AD953C52A4E7F6B40ABD0FD /* SuggestionsCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDelegate.h; sourceTree = "<group>"; };
-		3AD9549164596360BAFD6C10 /* SuggestionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionProvider.h; sourceTree = "<group>"; };
-		3AD9550656C1EA3A6E48922F /* SuggestionSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionSliderDelegate.h; sourceTree = "<group>"; };
-		3AD95768F6A50672014BF3D8 /* SuggestionsCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDataSource.h; sourceTree = "<group>"; };
-		3AD9578E4184C0DC36363FE1 /* SuggestionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionProvider.m; sourceTree = "<group>"; };
-		3AD957AE288176CE9644F896 /* SuggestSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestSliderView.h; sourceTree = "<group>"; };
-		3AD957F03BCB00E2DDEAE8D0 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		3AD9588BA894A48CF06CE4D0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		3AD958B0C7EDD832E85FCA20 /* AddressSuggestTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSuggestTextField.h; sourceTree = "<group>"; };
-		3AD9596621EF160C40F2B0B2 /* UIFont+SuggestionFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SuggestionFont.h"; sourceTree = "<group>"; };
-		3AD95A179D76A1050E542E50 /* SuggestionViewWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionViewWithLabel.h; sourceTree = "<group>"; };
-		3AD95A808285BD754A59B5C6 /* SuggestionsCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsCollectionViewDelegate.m; sourceTree = "<group>"; };
-		3AD95CCAF7A1A8C0C157FB1B /* UIFont+SuggestionFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SuggestionFont.m"; sourceTree = "<group>"; };
-		3AD95E14CC5B195CFB40621F /* SuggestionsCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsCollectionViewDataSource.m; sourceTree = "<group>"; };
-		3AD95FEFA590501D89BC4896 /* SuggestSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestSliderView.m; sourceTree = "<group>"; };
+		3141AE4F0CC23325C611D9D5 /* Pods-AddressSuggestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressSuggestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddressSuggestApp/Pods-AddressSuggestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		48D70E597E6A8D21CCC17B51 /* libPods-AddressSuggestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddressSuggestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2B285B0C465903FC1439B8 /* Pods-AddressSuggestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressSuggestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddressSuggestApp/Pods-AddressSuggestApp.release.xcconfig"; sourceTree = "<group>"; };
 		A7B2EE5E20469E3200449B64 /* AddressSuggestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressSuggestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B2EE6120469E3300449B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7B2EE6220469E3300449B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,74 +37,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311364E549FE258A3DEB5BA9 /* libPods-AddressSuggestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3AD9510082778E61940A9231 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				3AD95A179D76A1050E542E50 /* SuggestionViewWithLabel.h */,
-				3AD9550656C1EA3A6E48922F /* SuggestionSliderDelegate.h */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		3AD9514DC06036E31A57E26C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3AD95FEFA590501D89BC4896 /* SuggestSliderView.m */,
-				3AD957AE288176CE9644F896 /* SuggestSliderView.h */,
-				3AD951976F4AC5D8AECC64C8 /* SuggestionCollectionViewCell.m */,
-				3AD951217DD6D65923321D3A /* SuggestionCollectionViewCell.h */,
-				3AD9500F511995D0986EF5AF /* AddressSuggestTextField.m */,
-				3AD958B0C7EDD832E85FCA20 /* AddressSuggestTextField.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3AD95721C75CE0217853F8DC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				3AD9588BA894A48CF06CE4D0 /* Constants.h */,
-				3AD957F03BCB00E2DDEAE8D0 /* Constants.m */,
-				3AD95CCAF7A1A8C0C157FB1B /* UIFont+SuggestionFont.m */,
-				3AD9596621EF160C40F2B0B2 /* UIFont+SuggestionFont.h */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3AD9574F84A8A7043A188AAB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3AD9549164596360BAFD6C10 /* SuggestionProvider.h */,
-				3AD9578E4184C0DC36363FE1 /* SuggestionProvider.m */,
-				3AD95E14CC5B195CFB40621F /* SuggestionsCollectionViewDataSource.m */,
-				3AD95768F6A50672014BF3D8 /* SuggestionsCollectionViewDataSource.h */,
-				3AD95A808285BD754A59B5C6 /* SuggestionsCollectionViewDelegate.m */,
-				3AD953C52A4E7F6B40ABD0FD /* SuggestionsCollectionViewDelegate.h */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3AD95F52193D0F802EC3F2B5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3AD9574F84A8A7043A188AAB /* Controller */,
-				3AD9514DC06036E31A57E26C /* View */,
-				3AD9510082778E61940A9231 /* Protocols */,
-				3AD95721C75CE0217853F8DC /* Helpers */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		A7B2EE5520469E3200449B64 = {
 			isa = PBXGroup;
 			children = (
 				A7B2EE6020469E3200449B64 /* AddressSuggestApp */,
 				A7B2EE5F20469E3200449B64 /* Products */,
+				F2C21F38F6F538855709DD5A /* Pods */,
+				C05A13233B556732D1FED276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +74,25 @@
 				A7B2EE6C20469E3300449B64 /* LaunchScreen.storyboard */,
 				A7B2EE6F20469E3300449B64 /* Info.plist */,
 				A7B2EE7020469E3300449B64 /* main.m */,
-				3AD95F52193D0F802EC3F2B5 /* Classes */,
 			);
 			path = AddressSuggestApp;
+			sourceTree = "<group>";
+		};
+		C05A13233B556732D1FED276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D70E597E6A8D21CCC17B51 /* libPods-AddressSuggestApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2C21F38F6F538855709DD5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3141AE4F0CC23325C611D9D5 /* Pods-AddressSuggestApp.debug.xcconfig */,
+				6A2B285B0C465903FC1439B8 /* Pods-AddressSuggestApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7B2EE7420469E3300449B64 /* Build configuration list for PBXNativeTarget "AddressSuggestApp" */;
 			buildPhases = (
+				1DF7BA65B5FF4345037ABE45 /* [CP] Check Pods Manifest.lock */,
 				A7B2EE5A20469E3200449B64 /* Sources */,
 				A7B2EE5B20469E3200449B64 /* Frameworks */,
 				A7B2EE5C20469E3200449B64 /* Resources */,
+				79A36D31E1EC8AAC485616D9 /* [CP] Embed Pods Frameworks */,
+				4D1297D245B55793BA58C57A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +164,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DF7BA65B5FF4345037ABE45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AddressSuggestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1297D245B55793BA58C57A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddressSuggestApp/Pods-AddressSuggestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A36D31E1EC8AAC485616D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddressSuggestApp/Pods-AddressSuggestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7B2EE5A20469E3200449B64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,14 +223,6 @@
 				A7B2EE6620469E3300449B64 /* ViewController.m in Sources */,
 				A7B2EE7120469E3300449B64 /* main.m in Sources */,
 				A7B2EE6320469E3300449B64 /* AppDelegate.m in Sources */,
-				3AD95644CC53DE361FDCC0CF /* SuggestionProvider.m in Sources */,
-				3AD9501A10AA816FEAAEE668 /* SuggestionsCollectionViewDataSource.m in Sources */,
-				3AD95D995EF911D5AA7B9814 /* SuggestionsCollectionViewDelegate.m in Sources */,
-				3AD95914D941F7786009E71F /* SuggestSliderView.m in Sources */,
-				3AD956D8098F6E81B0AAB809 /* SuggestionCollectionViewCell.m in Sources */,
-				3AD9546F51F5BDBAB18A4B38 /* AddressSuggestTextField.m in Sources */,
-				3AD95C20BACEF31861C4F710 /* Constants.m in Sources */,
-				3AD958C81B6A5E41586F6ABC /* UIFont+SuggestionFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +354,7 @@
 		};
 		A7B2EE7520469E3300449B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3141AE4F0CC23325C611D9D5 /* Pods-AddressSuggestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +369,7 @@
 		};
 		A7B2EE7620469E3300449B64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2B285B0C465903FC1439B8 /* Pods-AddressSuggestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

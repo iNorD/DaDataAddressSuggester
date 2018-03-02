@@ -1,0 +1,1 @@
+../../../../../Classes/Controller/SuggestionsCollectionViewDelegate.h

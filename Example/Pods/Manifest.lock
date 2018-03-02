@@ -1,0 +1,16 @@
+PODS:
+  - DaDataAddressSuggester (1.0.1)
+
+DEPENDENCIES:
+  - DaDataAddressSuggester (from `../`)
+
+EXTERNAL SOURCES:
+  DaDataAddressSuggester:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DaDataAddressSuggester: b3d5a09366993872e88ef6c71fc035ffb2a62ed6
+
+PODFILE CHECKSUM: 93b88f737a7136675bdee8a628b8c30e79518856
+
+COCOAPODS: 1.4.0.beta.1
