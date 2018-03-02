@@ -36,7 +36,10 @@
     [urlRequest setHTTPMethod:@"POST"];
 
     [urlRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [urlRequest addValue:@"Token 8b612c9ec1a992b3b27a0779e23a2fd8a1630d80" forHTTPHeaderField:@"Authorization"];
+
+    NSString * authValue = [NSString stringWithFormat:@"Token %@", self.daDataAPIKey];
+
+    [urlRequest addValue:authValue forHTTPHeaderField:@"Authorization"];
 
 
 

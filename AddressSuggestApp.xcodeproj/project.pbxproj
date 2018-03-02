@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AD9500E6AA47C8F78A8C98E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9544B70D41E9A4F31A725 /* Constants.m */; };
-		3AD9506A09533B823403F03D /* SuggestionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9576545667BFE8CEA0E80 /* SuggestionProvider.m */; };
-		3AD955A87883A2A9177F3FE8 /* SuggestionsCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD953E5065378A90BB6D978 /* SuggestionsCollectionViewDataSource.m */; };
-		3AD957E4EAE07D42A7F68B53 /* UIFont+SuggestionFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9574160BE729F616CE6E0 /* UIFont+SuggestionFont.m */; };
-		3AD95B01960FDBBDBF52963D /* SuggestionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD958FDADCC26336E1CCFB3 /* SuggestionCollectionViewCell.m */; };
-		3AD95B0B309C402533AA2FAC /* SuggestSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95ED7C513DEA88212DF0B /* SuggestSliderView.m */; };
-		3AD95E1BDE0978A3928EE33D /* SuggestionsCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD959D0FDCF6D47CF355EEA /* SuggestionsCollectionViewDelegate.m */; };
-		3AD95F120AF9B9FA72F96D28 /* AddressSuggestTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9594E996D2C4E44B8EDF1 /* AddressSuggestTextField.m */; };
+		3AD9501A10AA816FEAAEE668 /* SuggestionsCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95E14CC5B195CFB40621F /* SuggestionsCollectionViewDataSource.m */; };
+		3AD9546F51F5BDBAB18A4B38 /* AddressSuggestTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9500F511995D0986EF5AF /* AddressSuggestTextField.m */; };
+		3AD95644CC53DE361FDCC0CF /* SuggestionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9578E4184C0DC36363FE1 /* SuggestionProvider.m */; };
+		3AD956D8098F6E81B0AAB809 /* SuggestionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD951976F4AC5D8AECC64C8 /* SuggestionCollectionViewCell.m */; };
+		3AD958C81B6A5E41586F6ABC /* UIFont+SuggestionFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95CCAF7A1A8C0C157FB1B /* UIFont+SuggestionFont.m */; };
+		3AD95914D941F7786009E71F /* SuggestSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95FEFA590501D89BC4896 /* SuggestSliderView.m */; };
+		3AD95C20BACEF31861C4F710 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD957F03BCB00E2DDEAE8D0 /* Constants.m */; };
+		3AD95D995EF911D5AA7B9814 /* SuggestionsCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD95A808285BD754A59B5C6 /* SuggestionsCollectionViewDelegate.m */; };
 		A7B2EE6320469E3300449B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2EE6220469E3300449B64 /* AppDelegate.m */; };
 		A7B2EE6620469E3300449B64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2EE6520469E3300449B64 /* ViewController.m */; };
 		A7B2EE6920469E3300449B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B2EE6720469E3300449B64 /* Main.storyboard */; };
@@ -24,24 +24,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AD951DBAD9BDE3B1F79C936 /* SuggestionViewWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionViewWithLabel.h; sourceTree = "<group>"; };
-		3AD9528EC3DBCD1C19BFECEA /* UIFont+SuggestionFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SuggestionFont.h"; sourceTree = "<group>"; };
-		3AD953E5065378A90BB6D978 /* SuggestionsCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsCollectionViewDataSource.m; sourceTree = "<group>"; };
-		3AD9544B70D41E9A4F31A725 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		3AD9574160BE729F616CE6E0 /* UIFont+SuggestionFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SuggestionFont.m"; sourceTree = "<group>"; };
-		3AD9576545667BFE8CEA0E80 /* SuggestionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionProvider.m; sourceTree = "<group>"; };
-		3AD957A5DA9E7589E4713755 /* SuggestSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestSliderView.h; sourceTree = "<group>"; };
-		3AD957E74346EC6A43004394 /* SuggestionsCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDelegate.h; sourceTree = "<group>"; };
-		3AD958FDADCC26336E1CCFB3 /* SuggestionCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionCollectionViewCell.m; sourceTree = "<group>"; };
-		3AD9594E996D2C4E44B8EDF1 /* AddressSuggestTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSuggestTextField.m; sourceTree = "<group>"; };
-		3AD959B1E73E007C64B80181 /* SuggestionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionProvider.h; sourceTree = "<group>"; };
-		3AD959D0FDCF6D47CF355EEA /* SuggestionsCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsCollectionViewDelegate.m; sourceTree = "<group>"; };
-		3AD95AC3897B6336C9A72338 /* AddressSuggestTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSuggestTextField.h; sourceTree = "<group>"; };
-		3AD95D8923E6E71D03C9C3A7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		3AD95E8503D5153663A872E8 /* SuggestionsCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDataSource.h; sourceTree = "<group>"; };
-		3AD95ED7C513DEA88212DF0B /* SuggestSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestSliderView.m; sourceTree = "<group>"; };
-		3AD95EEEADA4FA5DB71F25E6 /* SuggestionSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionSliderDelegate.h; sourceTree = "<group>"; };
-		3AD95F2ED5FEE5224E9E54CA /* SuggestionCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionCollectionViewCell.h; sourceTree = "<group>"; };
+		3AD9500F511995D0986EF5AF /* AddressSuggestTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSuggestTextField.m; sourceTree = "<group>"; };
+		3AD951217DD6D65923321D3A /* SuggestionCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionCollectionViewCell.h; sourceTree = "<group>"; };
+		3AD951976F4AC5D8AECC64C8 /* SuggestionCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionCollectionViewCell.m; sourceTree = "<group>"; };
+		3AD953C52A4E7F6B40ABD0FD /* SuggestionsCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDelegate.h; sourceTree = "<group>"; };
+		3AD9549164596360BAFD6C10 /* SuggestionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionProvider.h; sourceTree = "<group>"; };
+		3AD9550656C1EA3A6E48922F /* SuggestionSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionSliderDelegate.h; sourceTree = "<group>"; };
+		3AD95768F6A50672014BF3D8 /* SuggestionsCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDataSource.h; sourceTree = "<group>"; };
+		3AD9578E4184C0DC36363FE1 /* SuggestionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionProvider.m; sourceTree = "<group>"; };
+		3AD957AE288176CE9644F896 /* SuggestSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestSliderView.h; sourceTree = "<group>"; };
+		3AD957F03BCB00E2DDEAE8D0 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		3AD9588BA894A48CF06CE4D0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3AD958B0C7EDD832E85FCA20 /* AddressSuggestTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSuggestTextField.h; sourceTree = "<group>"; };
+		3AD9596621EF160C40F2B0B2 /* UIFont+SuggestionFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SuggestionFont.h"; sourceTree = "<group>"; };
+		3AD95A179D76A1050E542E50 /* SuggestionViewWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionViewWithLabel.h; sourceTree = "<group>"; };
+		3AD95A808285BD754A59B5C6 /* SuggestionsCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsCollectionViewDelegate.m; sourceTree = "<group>"; };
+		3AD95CCAF7A1A8C0C157FB1B /* UIFont+SuggestionFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SuggestionFont.m"; sourceTree = "<group>"; };
+		3AD95E14CC5B195CFB40621F /* SuggestionsCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsCollectionViewDataSource.m; sourceTree = "<group>"; };
+		3AD95FEFA590501D89BC4896 /* SuggestSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestSliderView.m; sourceTree = "<group>"; };
 		A7B2EE5E20469E3200449B64 /* AddressSuggestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressSuggestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B2EE6120469E3300449B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7B2EE6220469E3300449B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,50 +65,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3AD9513E879804DF797C8427 /* Controller */ = {
+		3AD9510082778E61940A9231 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3AD959B1E73E007C64B80181 /* SuggestionProvider.h */,
-				3AD9576545667BFE8CEA0E80 /* SuggestionProvider.m */,
-				3AD953E5065378A90BB6D978 /* SuggestionsCollectionViewDataSource.m */,
-				3AD95E8503D5153663A872E8 /* SuggestionsCollectionViewDataSource.h */,
-				3AD959D0FDCF6D47CF355EEA /* SuggestionsCollectionViewDelegate.m */,
-				3AD957E74346EC6A43004394 /* SuggestionsCollectionViewDelegate.h */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3AD9594FE8964D3AC730C4FE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3AD95ED7C513DEA88212DF0B /* SuggestSliderView.m */,
-				3AD957A5DA9E7589E4713755 /* SuggestSliderView.h */,
-				3AD958FDADCC26336E1CCFB3 /* SuggestionCollectionViewCell.m */,
-				3AD95F2ED5FEE5224E9E54CA /* SuggestionCollectionViewCell.h */,
-				3AD9594E996D2C4E44B8EDF1 /* AddressSuggestTextField.m */,
-				3AD95AC3897B6336C9A72338 /* AddressSuggestTextField.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3AD95A2738AB2F7925C5E11F /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				3AD951DBAD9BDE3B1F79C936 /* SuggestionViewWithLabel.h */,
-				3AD95EEEADA4FA5DB71F25E6 /* SuggestionSliderDelegate.h */,
+				3AD95A179D76A1050E542E50 /* SuggestionViewWithLabel.h */,
+				3AD9550656C1EA3A6E48922F /* SuggestionSliderDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		3AD95EC72AEC71A14C0325C1 /* Helpers */ = {
+		3AD9514DC06036E31A57E26C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3AD95D8923E6E71D03C9C3A7 /* Constants.h */,
-				3AD9544B70D41E9A4F31A725 /* Constants.m */,
-				3AD9574160BE729F616CE6E0 /* UIFont+SuggestionFont.m */,
-				3AD9528EC3DBCD1C19BFECEA /* UIFont+SuggestionFont.h */,
+				3AD95FEFA590501D89BC4896 /* SuggestSliderView.m */,
+				3AD957AE288176CE9644F896 /* SuggestSliderView.h */,
+				3AD951976F4AC5D8AECC64C8 /* SuggestionCollectionViewCell.m */,
+				3AD951217DD6D65923321D3A /* SuggestionCollectionViewCell.h */,
+				3AD9500F511995D0986EF5AF /* AddressSuggestTextField.m */,
+				3AD958B0C7EDD832E85FCA20 /* AddressSuggestTextField.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AD95721C75CE0217853F8DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9588BA894A48CF06CE4D0 /* Constants.h */,
+				3AD957F03BCB00E2DDEAE8D0 /* Constants.m */,
+				3AD95CCAF7A1A8C0C157FB1B /* UIFont+SuggestionFont.m */,
+				3AD9596621EF160C40F2B0B2 /* UIFont+SuggestionFont.h */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3AD9574F84A8A7043A188AAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9549164596360BAFD6C10 /* SuggestionProvider.h */,
+				3AD9578E4184C0DC36363FE1 /* SuggestionProvider.m */,
+				3AD95E14CC5B195CFB40621F /* SuggestionsCollectionViewDataSource.m */,
+				3AD95768F6A50672014BF3D8 /* SuggestionsCollectionViewDataSource.h */,
+				3AD95A808285BD754A59B5C6 /* SuggestionsCollectionViewDelegate.m */,
+				3AD953C52A4E7F6B40ABD0FD /* SuggestionsCollectionViewDelegate.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AD95F52193D0F802EC3F2B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9574F84A8A7043A188AAB /* Controller */,
+				3AD9514DC06036E31A57E26C /* View */,
+				3AD9510082778E61940A9231 /* Protocols */,
+				3AD95721C75CE0217853F8DC /* Helpers */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		A7B2EE5520469E3200449B64 = {
@@ -139,10 +150,7 @@
 				A7B2EE6C20469E3300449B64 /* LaunchScreen.storyboard */,
 				A7B2EE6F20469E3300449B64 /* Info.plist */,
 				A7B2EE7020469E3300449B64 /* main.m */,
-				3AD9594FE8964D3AC730C4FE /* View */,
-				3AD9513E879804DF797C8427 /* Controller */,
-				3AD95A2738AB2F7925C5E11F /* Protocols */,
-				3AD95EC72AEC71A14C0325C1 /* Helpers */,
+				3AD95F52193D0F802EC3F2B5 /* Classes */,
 			);
 			path = AddressSuggestApp;
 			sourceTree = "<group>";
@@ -221,14 +229,14 @@
 				A7B2EE6620469E3300449B64 /* ViewController.m in Sources */,
 				A7B2EE7120469E3300449B64 /* main.m in Sources */,
 				A7B2EE6320469E3300449B64 /* AppDelegate.m in Sources */,
-				3AD95B0B309C402533AA2FAC /* SuggestSliderView.m in Sources */,
-				3AD95B01960FDBBDBF52963D /* SuggestionCollectionViewCell.m in Sources */,
-				3AD9506A09533B823403F03D /* SuggestionProvider.m in Sources */,
-				3AD95F120AF9B9FA72F96D28 /* AddressSuggestTextField.m in Sources */,
-				3AD9500E6AA47C8F78A8C98E /* Constants.m in Sources */,
-				3AD955A87883A2A9177F3FE8 /* SuggestionsCollectionViewDataSource.m in Sources */,
-				3AD95E1BDE0978A3928EE33D /* SuggestionsCollectionViewDelegate.m in Sources */,
-				3AD957E4EAE07D42A7F68B53 /* UIFont+SuggestionFont.m in Sources */,
+				3AD95644CC53DE361FDCC0CF /* SuggestionProvider.m in Sources */,
+				3AD9501A10AA816FEAAEE668 /* SuggestionsCollectionViewDataSource.m in Sources */,
+				3AD95D995EF911D5AA7B9814 /* SuggestionsCollectionViewDelegate.m in Sources */,
+				3AD95914D941F7786009E71F /* SuggestSliderView.m in Sources */,
+				3AD956D8098F6E81B0AAB809 /* SuggestionCollectionViewCell.m in Sources */,
+				3AD9546F51F5BDBAB18A4B38 /* AddressSuggestTextField.m in Sources */,
+				3AD95C20BACEF31861C4F710 /* Constants.m in Sources */,
+				3AD958C81B6A5E41586F6ABC /* UIFont+SuggestionFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

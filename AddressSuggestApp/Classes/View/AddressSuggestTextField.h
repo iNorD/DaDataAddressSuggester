@@ -10,6 +10,8 @@
 
 @interface AddressSuggestTextField : UITextField
 
--(void)setCity:(NSString *)cityName;
+- (void)setDaDataAPIKey:(NSString *)daDataAPIKey;
+
+- (void)setCity:(NSString *)cityName;
 
 @end

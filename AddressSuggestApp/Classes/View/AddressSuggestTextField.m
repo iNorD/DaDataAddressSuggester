@@ -30,6 +30,7 @@
     return self;
 }
 
+
 - (void)customInit {
 
     [self setClearButtonMode:UITextFieldViewModeWhileEditing];
@@ -38,8 +39,13 @@
     [self addSuggestView];
     _suggestionProvider = [[SuggestionProvider alloc] initWithDelegate:self];
 
-
 }
+
+- (void)setDaDataAPIKey:(NSString *)daDataAPIKey {
+
+    [_suggestionProvider setDaDataAPIKey:daDataAPIKey];
+}
+
 
 - (void)setCity:(NSString *)cityName {
 

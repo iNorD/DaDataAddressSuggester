@@ -13,6 +13,8 @@
 
 @interface SuggestionProvider : NSObject
 
+@property NSString *daDataAPIKey;
+
 - (instancetype)initWithDelegate:(id <SuggestionsGetterDelegate>)delegate;
 
 - (void)requestSuggestionsForAddress:(NSString *)address;
