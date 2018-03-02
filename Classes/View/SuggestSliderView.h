@@ -5,8 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-@protocol SuggestionSliderDelegate;
+#import "SuggestionSliderDelegate.h"
 
 
 @interface SuggestSliderView : UIView

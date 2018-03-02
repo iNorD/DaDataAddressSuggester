@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		311364E549FE258A3DEB5BA9 /* libPods-AddressSuggestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D70E597E6A8D21CCC17B51 /* libPods-AddressSuggestApp.a */; };
+		3AD958BB0B51949B9F43B63C /* DaDataAddressSuggester.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3AD95B1461CE8D56C378FE82 /* DaDataAddressSuggester.podspec */; };
 		A7B2EE6320469E3300449B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2EE6220469E3300449B64 /* AppDelegate.m */; };
 		A7B2EE6620469E3300449B64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B2EE6520469E3300449B64 /* ViewController.m */; };
 		A7B2EE6920469E3300449B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B2EE6720469E3300449B64 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3141AE4F0CC23325C611D9D5 /* Pods-AddressSuggestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressSuggestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddressSuggestApp/Pods-AddressSuggestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3AD95B1461CE8D56C378FE82 /* DaDataAddressSuggester.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; name = DaDataAddressSuggester.podspec; path = ../DaDataAddressSuggester.podspec; sourceTree = "<group>"; };
 		48D70E597E6A8D21CCC17B51 /* libPods-AddressSuggestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddressSuggestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2B285B0C465903FC1439B8 /* Pods-AddressSuggestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressSuggestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddressSuggestApp/Pods-AddressSuggestApp.release.xcconfig"; sourceTree = "<group>"; };
 		A7B2EE5E20469E3200449B64 /* AddressSuggestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressSuggestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B2EE5E20469E3200449B64 /* AddressSuggestApp.app */,
+				3AD95B1461CE8D56C378FE82 /* DaDataAddressSuggester.podspec */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				A7B2EE6E20469E3300449B64 /* LaunchScreen.storyboard in Resources */,
 				A7B2EE6B20469E3300449B64 /* Assets.xcassets in Resources */,
 				A7B2EE6920469E3300449B64 /* Main.storyboard in Resources */,
+				3AD958BB0B51949B9F43B63C /* DaDataAddressSuggester.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

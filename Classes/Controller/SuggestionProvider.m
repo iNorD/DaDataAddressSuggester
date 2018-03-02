@@ -31,7 +31,13 @@
         address = [NSString stringWithFormat:@"%@ %@", _cityName, address];
     }
 
-    NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address"]];
+    NSURL *URL = [NSURL URLWithString:@"https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address"];
+
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+
+
+    NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:URL];
 
     [urlRequest setHTTPMethod:@"POST"];
 
@@ -50,8 +56,8 @@
 
 
 
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+
         if (error) {
             NSLog(@"Error,%@", [error localizedDescription]);
         }
@@ -83,7 +89,11 @@
             [self.delegate didGetSuggestions:returnSuggestions];
 
         }
+
+
     }];
+
+    [dataTask resume];
 
 }
 

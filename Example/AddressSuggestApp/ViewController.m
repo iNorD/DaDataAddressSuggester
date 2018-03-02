@@ -20,7 +20,7 @@
     [super viewDidLoad];
 
     [self.textField setCity:@"Санкт-Петербург"];
-    [self.textField setDaDataAPIKey:@"8b612c9ec1a992b3b27a0779e23a2fd8a1630d80"];
+    [self.textField setDaDataAPIKey:@""];
 
 }
 
