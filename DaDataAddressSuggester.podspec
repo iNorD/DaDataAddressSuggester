@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DaDataAddressSuggester"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Suggests Address to UITextField"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description      = <<-DESC
-Suggests Address to UITextField
+Suggests Address to UITextField. Gets the suggestions from DaData service.
                        DESC
 
   s.homepage     = "https://github.com/iNorD/DaDataAddressSuggester.git"
