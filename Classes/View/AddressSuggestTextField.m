@@ -62,7 +62,10 @@
                                                object:nil];
 
 
-
+    [[NSNotificationCenter defaultCenter] addObserver:self
+            selector:@selector(keyboardWasShown:)
+            name:UIKeyboardDidChangeFrameNotification
+            object:nil];
 
 
 
@@ -72,7 +75,7 @@
 
     [_suggestView removeFromSuperview];
 
-    CGSize keyboardSize = [[notification userInfo][UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
 
     _suggestView = [SuggestSliderView new];
     [_suggestView setDelegate:self];
