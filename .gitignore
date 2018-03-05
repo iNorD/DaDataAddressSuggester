@@ -127,3 +127,8 @@ iOSInjectionProject/
 
 
 Example/.idea
+.idea/AddressSuggestApp.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/xcode.xml
+.idea/codeStyles/Project.xml

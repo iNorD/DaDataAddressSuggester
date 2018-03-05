@@ -16,7 +16,7 @@
 @end
 
 @implementation AddressSuggestTextField  {
-    SuggestSliderView * _suggestView;
+    SuggestSliderView * _suggestSlideView;
     NSString *_cityName;
     SuggestionProvider * _suggestionProvider;
 }
@@ -31,12 +31,18 @@
 }
 
 
+- (void)dealloc {
+
+    [self unregisterForKeyboardNotifications];
+
+}
+
+
 - (void)customInit {
 
     [self setClearButtonMode:UITextFieldViewModeWhileEditing];
 
-    [self setDelegate:self];
-    [self addSuggestView];
+    [self registerNotifications];
     _suggestionProvider = [[SuggestionProvider alloc] initWithDelegate:self];
 
 }
@@ -53,56 +59,75 @@
 
 }
 
-- (void)addSuggestView {
+- (void)registerNotifications {
 
 
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWasShown:)
-                                                 name:UIKeyboardDidShowNotification
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
                                                object:nil];
 
 
     [[NSNotificationCenter defaultCenter] addObserver:self
-            selector:@selector(keyboardWasShown:)
-            name:UIKeyboardDidChangeFrameNotification
-            object:nil];
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillChangeFrameNotification
+                                               object:nil];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
 
 
 }
 
-- (void)keyboardWasShown:(NSNotification *)notification {
 
-    [_suggestView removeFromSuperview];
+- (void)unregisterForKeyboardNotifications {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
+
+
+
+- (void)keyboardWillHide:(NSNotification *)notification {
+
+    [_suggestSlideView removeFromSuperview];
+
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification {
+
+    [_suggestSlideView removeFromSuperview];
+
+    UIView *textFieldSuperView = [UIApplication sharedApplication].keyWindow.subviews.firstObject;
 
     CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
 
-    _suggestView = [SuggestSliderView new];
-    [_suggestView setDelegate:self];
 
     CGRect screenRect = [[UIScreen mainScreen] bounds];
 
-    CGSize suggestViewSize = CGSizeMake(screenRect.size.width, kSuggestionsSliderViewHeight);
-    [_suggestView setBackgroundColor:[UIColor grayColor]];
+    CGRect suggestSlideViewFrame = CGRectMake(0, screenRect.size.height - keyboardSize.height - kSuggestionsSliderViewHeight, screenRect.size.width, kSuggestionsSliderViewHeight);
 
-    [_suggestView setFrame:CGRectMake(0, screenRect.size.height-keyboardSize.height-suggestViewSize.height, suggestViewSize.width, suggestViewSize.height)];
+    _suggestSlideView = [[SuggestSliderView alloc] initWithFrame:suggestSlideViewFrame];
+    [_suggestSlideView setDelegate:self];
 
-    [[UIApplication sharedApplication].keyWindow addSubview:_suggestView];
+
+    [textFieldSuperView addSubview:_suggestSlideView];
+
 
     [_suggestionProvider requestSuggestionsForAddress:@"" inCity:_cityName];
+
+    [self addTarget:self action:@selector(textFieldDidChange) forControlEvents:UIControlEventEditingChanged];
+
 
 }
 
 
-#pragma mark - Text Field Delegate
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+-(void)textFieldDidChange {
 
-    NSString *searchStr = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    [_suggestionProvider requestSuggestionsForAddress:self.text inCity:_cityName];
 
-    [_suggestionProvider requestSuggestionsForAddress:searchStr inCity:_cityName];
-
-    return YES;
 }
 
 
@@ -110,7 +135,7 @@
 
     [self setText:[NSString stringWithFormat:@"%@ ", suggestion]];
 
-    [_suggestionProvider requestSuggestionsForAddress:suggestion inCity:_cityName];
+    [_suggestionProvider requestSuggestionsForAddress:self.text inCity:_cityName];
 
 }
 
@@ -118,7 +143,7 @@
 
 - (void)didGetSuggestions:(NSArray<NSString *> *)suggestions {
 
-    [_suggestView reloadWithSuggestions:suggestions];
+    [_suggestSlideView reloadWithSuggestions:suggestions];
 
 }
 

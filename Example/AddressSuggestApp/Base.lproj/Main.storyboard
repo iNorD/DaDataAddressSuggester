@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,15 +19,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qk9-Mh-m34" customClass="AddressSuggestTextField">
-                                <rect key="frame" x="94" y="83" width="187" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qk9-Mh-m34" customClass="AddressSuggestTextField">
+                                <rect key="frame" x="19" y="114" width="337.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="touchOutOutsideTextField:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="nng-VA-7XU"/>
+                                </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHS-DY-jIx">
+                                <rect key="frame" x="139" y="64" width="97" height="30"/>
+                                <state key="normal" title="hide keyboard"/>
+                                <connections>
+                                    <action selector="hideKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLZ-7f-KDW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qk9-Mh-m34" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lkc-6M-Tdc"/>
+                            <constraint firstItem="qk9-Mh-m34" firstAttribute="top" secondItem="WHS-DY-jIx" secondAttribute="bottom" constant="20" id="Ui5-l4-gC6"/>
+                            <constraint firstItem="WHS-DY-jIx" firstAttribute="centerX" secondItem="qk9-Mh-m34" secondAttribute="centerX" id="dkH-kX-2Iu"/>
+                            <constraint firstItem="qk9-Mh-m34" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="lYs-iA-ix2"/>
+                            <constraint firstItem="qk9-Mh-m34" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="tN3-QK-8QZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
