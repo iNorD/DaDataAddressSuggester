@@ -65,8 +65,10 @@
     [_suggestionsCollectionViewDataSource updateSuggestions:suggestions];
     [_suggestionsCollectionViewDelegate updateSuggestions:suggestions];
 
+    __weak typeof(self) selfWeak = self;
     dispatch_async(dispatch_get_main_queue(), ^ {
-        [_sliderCollectionView reloadData];
+        __strong typeof(selfWeak) selfStrong = selfWeak;
+        [selfStrong->_sliderCollectionView reloadData];
     });
 
 }
