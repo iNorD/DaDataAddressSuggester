@@ -73,17 +73,12 @@
                                                  name:UIKeyboardWillChangeFrameNotification
                                                object:nil];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-
 
 }
 
 
 - (void)unregisterForKeyboardNotifications {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
@@ -92,16 +87,22 @@
 - (void)keyboardWillHide:(NSNotification *)notification {
 
     [_suggestSlideView removeFromSuperview];
+    _suggestSlideView = nil;
 
 }
 
 - (void)keyboardWillShow:(NSNotification *)notification {
 
+    CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+
+    //return if keyboard is hiding
+    if(keyboardSize.height==0) {
+        return;
+    }
+
     [_suggestSlideView removeFromSuperview];
 
     UIView *textFieldSuperView = [UIApplication sharedApplication].keyWindow.subviews.firstObject;
-
-    CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
 
 
     CGRect screenRect = [[UIScreen mainScreen] bounds];

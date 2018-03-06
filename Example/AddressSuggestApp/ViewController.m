@@ -26,12 +26,6 @@
 
 }
 
-- (IBAction)hideKeyboard:(id)sender {
-    
-    [_textField resignFirstResponder];
-    
-}
-
 
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
