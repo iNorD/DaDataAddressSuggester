@@ -14,4 +14,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed the problem when there are more then one text field on the screen and all are adding suggestions.
 
 [Unreleased]: https://github.com/iNorD/DaDataAddressSuggester/compare/1.3.4...HEAD
-[1.3.4]: https://github.com/iNorD/DaDataAddressSuggester/compare/1.3.4...1.3.3
+[1.3.4]: https://github.com/iNorD/DaDataAddressSuggester/compare/1.3.3...1.3.4
