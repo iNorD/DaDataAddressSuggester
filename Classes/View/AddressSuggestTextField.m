@@ -70,6 +70,12 @@
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillChangeFrame:)
                                                  name:UIKeyboardWillChangeFrameNotification
                                                object:nil];
 
@@ -91,39 +97,51 @@
 
 }
 
-- (void)keyboardWillShow:(NSNotification *)notification {
+-(void)keyboardWillChangeFrame:(NSNotification *)notification {
 
     CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
 
-    //return if keyboard is hiding
-    if(keyboardSize.height==0) {
-        return;
+    if (_suggestSlideView != nil && keyboardSize.height != 0) {
+
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+
+        CGRect suggestSlideViewFrame = CGRectMake(0, screenRect.size.height - keyboardSize.height - kSuggestionsSliderViewHeight, screenRect.size.width, kSuggestionsSliderViewHeight);
+
+        [_suggestSlideView setFrame:suggestSlideViewFrame];
+
     }
-
-    [_suggestSlideView removeFromSuperview];
-
-    UIView *textFieldSuperView = [UIApplication sharedApplication].keyWindow.subviews.firstObject;
-
-
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
-
-    CGRect suggestSlideViewFrame = CGRectMake(0, screenRect.size.height - keyboardSize.height - kSuggestionsSliderViewHeight, screenRect.size.width, kSuggestionsSliderViewHeight);
-
-    _suggestSlideView = [[SuggestSliderView alloc] initWithFrame:suggestSlideViewFrame];
-    [_suggestSlideView setDelegate:self];
-
-
-    [textFieldSuperView addSubview:_suggestSlideView];
-
-
-    [_suggestionProvider requestSuggestionsForAddress:@"" inCity:_cityName];
-
-    [self addTarget:self action:@selector(textFieldDidChange) forControlEvents:UIControlEventEditingChanged];
-
 
 }
 
 
+- (void)keyboardWillShow:(NSNotification *)notification {
+
+    if(_suggestSlideView == nil) {
+
+        CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+
+        UIView *textFieldSuperView = [UIApplication sharedApplication].keyWindow.subviews.firstObject;
+
+
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+
+        CGRect suggestSlideViewFrame = CGRectMake(0, screenRect.size.height - keyboardSize.height - kSuggestionsSliderViewHeight, screenRect.size.width, kSuggestionsSliderViewHeight);
+
+        _suggestSlideView = [[SuggestSliderView alloc] initWithFrame:suggestSlideViewFrame];
+        [_suggestSlideView setDelegate:self];
+
+
+        [textFieldSuperView addSubview:_suggestSlideView];
+
+        [_suggestionProvider requestSuggestionsForAddress:self.text inCity:_cityName];
+
+        [self addTarget:self action:@selector(textFieldDidChange) forControlEvents:UIControlEventEditingChanged];
+
+
+    }
+
+
+}
 
 -(void)textFieldDidChange {
 
