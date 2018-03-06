@@ -92,12 +92,20 @@
 
 - (void)keyboardWillHide:(NSNotification *)notification {
 
+    if(![self isFirstResponder]) {
+        return;
+    }
+
     [_suggestSlideView removeFromSuperview];
     _suggestSlideView = nil;
 
 }
 
 -(void)keyboardWillChangeFrame:(NSNotification *)notification {
+
+    if(![self isFirstResponder]) {
+        return;
+    }
 
     CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
 
@@ -115,6 +123,10 @@
 
 
 - (void)keyboardWillShow:(NSNotification *)notification {
+
+    if(![self isFirstResponder]) {
+        return;
+    }
 
     if(_suggestSlideView == nil) {
 

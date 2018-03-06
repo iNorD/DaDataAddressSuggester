@@ -48,6 +48,7 @@
 		1BB7D9AD01277FE22A7C75D42D2EA253 /* Pods-AddressSuggestApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AddressSuggestApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3026FF6664AB92D623F3AB60E58E48D1 /* Pods-AddressSuggestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddressSuggestApp.release.xcconfig"; sourceTree = "<group>"; };
 		30C115C32A851A6FC6582A2397690CA6 /* Pods-AddressSuggestApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AddressSuggestApp-resources.sh"; sourceTree = "<group>"; };
+		3AD95A7CD433385CBA05D7B9 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		43F6207419162B38BDC551AA9C9856D7 /* SuggestionsCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SuggestionsCollectionViewDataSource.h; sourceTree = "<group>"; };
 		460225C20A955490FCE02B270258D819 /* SuggestionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SuggestionProvider.m; sourceTree = "<group>"; };
 		4AB3CBDB03E1CE1246FDE95B1EAC2839 /* libDaDataAddressSuggester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDaDataAddressSuggester.a; path = libDaDataAddressSuggester.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +126,7 @@
 				7553B16E80004F929D3C9626457F1DDF /* Protocols */,
 				C06A2024B521A47865F152628BC83D5D /* Support Files */,
 				8E642C797084B81DB149F9ACA54F978E /* View */,
+				3AD95A7CD433385CBA05D7B9 /* CHANGELOG.md */,
 			);
 			name = DaDataAddressSuggester;
 			path = ../..;
